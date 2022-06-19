@@ -37,14 +37,7 @@ int main(int argc, char* argv[])
 		cout << "Error with input agrs.." << std::endl;
 		return 1;
 	}
-
-	// For debugging purposes only
-	/* for (int i = 0; i < argc; i++)
-	{
-		std::cout << i << ":" << argv[i] << std::endl;
-	}
-	*/
-
+	
 	ifstream inFile;
 	inFile.open(argv[1]);
 	if (!inFile)
@@ -52,10 +45,6 @@ int main(int argc, char* argv[])
 		cout << "Error with file name.." << std::endl;
 		return 1;
 	}
-
-	///////////////////////
-	// Work here with open file.....
-	///////////////////////
 
 	cout << "Analyzing file '" << argv[1] << "'..." << endl << endl;
 
@@ -66,12 +55,6 @@ int main(int argc, char* argv[])
 
 	while (inFile)
 	{
-
-	//	Didn't use:
-	//  inFile.get()
-	//	getline(inFile, inString);
-	//	currentCh = inString[chCounter];
-
 		inFile.get(currentCh);
 
 		switch (currentCh)
@@ -152,3 +135,14 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
+//	Code I didn't use:
+	//  inFile.get()
+	//	getline(inFile, inString);
+	//	currentCh = inString[chCounter];
+
+// For debugging purposes only
+	/* for (int i = 0; i < argc; i++)
+	{
+		std::cout << i << ":" << argv[i] << std::endl;
+	}
+	*/
