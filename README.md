@@ -1,1 +1,2 @@
 # Week 04  Assignment
+This Assignment works as a Vowel Counter. It counts the vowel of any file you run with it in the command line. The example I have included in the code is and html file of the Constitution of the United States. In this Assignment's description I have been asked to include three more letters to include in the counting, so I have decided that they will be the letters "j", "m", and "l".
